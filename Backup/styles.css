@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1490px){
+  main{
+    padding: 0px;
+  }
+}
+
+/* TODO taka ætti padding af main þegar komið er 
+fyrir ofan hámarksbreidd */
+
+.grid{
+  margin: 0 auto;
+  max-width: 1450px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+
+.col{
+  padding-right: 10px;
+  padding-left:  10px;
+}
+
+.col-12{
+  width: 100%;
+}
+
+.col-6{
+  width: 50%;
+}
+
+.col-4{
+  width: 33.33%;
+}
+
+
+/*Breyting á grid*/
+@media (min-width: 999px){
+  .col-lg-6{
+    width: 50%;
+  }
+}
+
+/*Breyting á cards*/
+@media (min-width: 1000px) {
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 699px) and (max-width: 999px) {
+  .col-md-6{
+    width: 50%;
+  }
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.text p {
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* grid fyrir efni, setja þarf upp í html */
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+
+.grid__col {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* TODO setja upp grid fyrir >= 1000px */
+
+/* TODO koma mynd fyrir á öðrum stað í < 1000px */
+
+/* grid fyrir cards */
+
+.cards {
+  display:flex;
+  background: #eee;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card__content{
+  display:flex;
+  margin-bottom: 10px;
+}
+
+.card__text
+{
+  word-wrap: break-word;
+  overflow:auto;
+  word-wrap: break-word;
+}
+
+.card{
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  margin-bottom:10px;
+  border: 5px solid #aaa;
+  border-radius: 5px;
+}
+
+.unstyled{
+  list-style-type: none;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+li{
+  align-self: flex-end;
+  justify-items: normal;
+  font-weight: bold;
+  margin:2px;
+}
+
+img{
+  max-width: 150px;
+}
+
+
+/* TODO útfæra grid fyrir cards */
+
+/*
+  .card kemur óbreytt úr sýnilausn á verkefni 5 fyrir utan 
+  responsive stíla og
+  að það fær `height: 100%;`
+
+*/
+
+/* TODO responsive stílar fyrir .card */
